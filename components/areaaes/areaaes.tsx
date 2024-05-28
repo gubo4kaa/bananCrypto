@@ -28,7 +28,7 @@ const Areaaes: FunctionComponent<AreaaesProps> = () => {
         onChange={(e) => e.target.value ? setText(e.target.value) : setHash(null)}
       />
       <input onChange={(e) => e.target.value.length > 0 ? setKey(e.target.value) : setKey(null)} className="rounded-[10px] p-[7px]" type="text" placeholder="key"/>
-      {hash && <p>sha256: {hash}</p>}
+      {hash && <p>aes: {hash}</p>}
       <Button onClick={() => (generateHash(text, keyClient))}>Generate aes</Button>
     </div>
   );
